@@ -16,7 +16,7 @@ module.exports = function linkCheck(link, opts, callback) {
         opts = {};
     }
 
-    opts.timeout = opts.timeout || '10s';
+    opts.timeout = opts.timeout || 10000;
     opts.retryOn429 = opts.retryOn429 || false;
     opts.allwaysRetry = opts.allwaysRetry || false;    
     opts.aliveStatusCodes = opts.aliveStatusCodes || [ 200 ];
